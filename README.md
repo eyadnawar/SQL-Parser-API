@@ -9,9 +9,9 @@ So, baically, this API takes in a request with some parameters that are filters,
 This system is implemented in Python's Flask. It uses Python version 3.9.4 and Flask version 2.0.1. To build, just clone the repo
 by running the following command in Git Bash in the appropriate directory:
 
-``git clone https://github.com/eyadnawar/adjust-task.git``
+``git clone https://github.com/eyadnawar/Adjust-task.git``
 
-Open the terminal and activate the virtual environment via the command `.\venv\Scripts\activate.bat` then install the necessary packages in the [requirements.txt](https://github.com/eyadnawar/adjust-task/blob/master/requirements.txt) run `pip install -r requirements.txt` and finally run `flask run <file_location>` or just open the `app.py` file, right click and choose build and run. It will run on the localhost.
+Open the terminal and activate the virtual environment via the command `.\venv\Scripts\activate.bat` then install the necessary packages in the [requirements.txt](https://github.com/eyadnawar/Adjust-task/requirements.txt) run `pip install -r requirements.txt`, then run the "importing_data" file to create the relational database that is going to store our csv file, and finally run `flask run <file_location>` or just open the `app.py` file, right click and choose build and run. It will run on the localhost.
 
 To conect to the service, there is only 1 endpoint that does all of the aforementioned operations. This endpoint is:
 
