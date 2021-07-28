@@ -22,6 +22,20 @@ To conect to the service, there is only 1 endpoint that does all of the aforemen
     3. `sort`: String                         ### The sorting variable, followed by the method of sorting (Asc / desc)
     4. `show`: List / Array                   ### The columns you want to select from the database for preview
        
+       ```
+       API request : {
+                        "filter" : {
+                                    "os" : "ios",
+                                    "country" : "US",
+                                    "channel" : "adcolony",
+                                    "date": "< 2017-06-01"
+                                    },
+                        "break_down" : ["channel", "country"],
+                        "sort"       : "clicks desc",
+                        "show"       : ["impressions sum", "clicks sum"]
+                    }
+       ```
+       
         and returns a response with the sql query corresponding to the specified filters and breakdowns along with the new dataset (which is a subset of the original dataset, that corresponds to those filtering, break down, and sorting commands)
     
 ### Rules for creating a request (Formats)
